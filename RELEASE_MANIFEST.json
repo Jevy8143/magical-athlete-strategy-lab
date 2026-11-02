@@ -1,0 +1,475 @@
+{
+  "files": {
+    ".gitattributes": {
+      "bytes": 156,
+      "sha256": "fc01e5e18ca05b78bb9fdfad4dfdf84dcd153a4710451daf3d6b37a74fa7868e"
+    },
+    ".gitignore": {
+      "bytes": 851,
+      "sha256": "4800810ebe09e81f3aa6d50672e0bba6b12ed1d8103856d4d6d9a558c14219c3"
+    },
+    "AGENTS.md": {
+      "bytes": 1283,
+      "sha256": "538645d1a4fcc7b21e442369b3e197948615d1b4c6e59b8e712f4b76f0622e06"
+    },
+    "README.md": {
+      "bytes": 10859,
+      "sha256": "72fa14e43605fad038a61ecf78ca67467f91d1a3bbd660af711f8292547e8db8"
+    },
+    "docs/CHECKPOINT_COMPARISON.md": {
+      "bytes": 10934,
+      "sha256": "197df35ad094d28a0c16b71ef2da2ef5f4c27594ff2f08d6f07b76e421f533fe"
+    },
+    "docs/RELEASE_SCOPE.md": {
+      "bytes": 2523,
+      "sha256": "39d4f511c7571206c18a531fc8720f90ed403503321d38350c9a13ee0ef77940"
+    },
+    "docs/VALIDATION.md": {
+      "bytes": 10854,
+      "sha256": "2dec76d4df33a5e723d18625ba7660c70465488b3e2f4b3a1da31e2196034f6f"
+    },
+    "docs/rule_manifest.json": {
+      "bytes": 222,
+      "sha256": "aed7ce05bee533313230667e0161591d637679edb3226a79942024d73ca9c539"
+    },
+    "docs/test_vectors_curated.csv": {
+      "bytes": 209,
+      "sha256": "d561311ba33c1f87f260bb4797c642d98ae40fa75358d5299d9058899872c056"
+    },
+    "examples/README.md": {
+      "bytes": 2991,
+      "sha256": "31d9d965f279aa0d6b8deac3fd2c7f27a9db4d9fcadd3c32f8914baeda420a4b"
+    },
+    "examples/checkpoint_comparison/README.md": {
+      "bytes": 3655,
+      "sha256": "2d76f6a80b93c402362d4ad40d958049a72c3ec311920fe64a7e905ab0b6b11c"
+    },
+    "examples/checkpoint_comparison/paired-scores-with-coverage.json": {
+      "bytes": 192201,
+      "sha256": "d609931b608b5d9c75128d022687ace4710228f1af9b45a4204c06b75e277194"
+    },
+    "examples/checkpoint_comparison/paired_scores.py": {
+      "bytes": 10954,
+      "sha256": "b8e780fa5e897abc5de329e51141a467682dc1e2de87c388ef1e098a219c0d2b"
+    },
+    "examples/checkpoint_comparison/paired_scores_with_coverage.py": {
+      "bytes": 7347,
+      "sha256": "038742c86e30bfa49e9e0fc2f6eedd5fdaa0421b37340222f2237063bf2282ca"
+    },
+    "examples/checkpoint_comparison/paired_scores_with_coverage.schema.json": {
+      "bytes": 12668,
+      "sha256": "0ded7bb3d5e68f4712a34c74bcea70806e370e280fd4f88384c3fc684cc4e323"
+    },
+    "examples/checkpoint_comparison/statistics-with-coverage.json": {
+      "bytes": 4306,
+      "sha256": "0c5e61f9b3108a7de2a0e1bc767716b6d113dafc980f499b7be40d2b439eb2e2"
+    },
+    "examples/demo-seed-1.expected.json": {
+      "bytes": 8117,
+      "sha256": "3ae1a7ba4f7813bfcccec2a51f0edcfec3778779e9cd6f9a4e483febc47c87a9"
+    },
+    "examples/fixed512_stopped/README.md": {
+      "bytes": 2699,
+      "sha256": "b75017345c91e4871b6b818e02ebc5b4a859c83ee9852c96140261304a55518b"
+    },
+    "examples/fixed512_stopped/failure-summary.json": {
+      "bytes": 2385,
+      "sha256": "f9ac417f0c5fc6b8b674a561bcbde4df8c8a5fccd745a68b096daa1cf1540492"
+    },
+    "examples/fixed512_stopped/fixed512-development-scores.json": {
+      "bytes": 113130,
+      "sha256": "4054f384e3e29080973f99107daa9f29b1eb68cbb0024812423b73ca83eaa45f"
+    },
+    "examples/fixed512_stopped/fixed512_development_scores.py": {
+      "bytes": 9856,
+      "sha256": "735c886db1d572a456e902305fc87acbf98ad2917fd77ee2267db4fb7dd6d80e"
+    },
+    "examples/fixed512_stopped/paired_scores.py": {
+      "bytes": 10954,
+      "sha256": "b8e780fa5e897abc5de329e51141a467682dc1e2de87c388ef1e098a219c0d2b"
+    },
+    "examples/fixed512_stopped/statistics.json": {
+      "bytes": 1568,
+      "sha256": "0d901f93b1e1126f976a9cf69f668fdc793bde9aa2a70103ff53ab4c4fb27a3c"
+    },
+    "examples/model-a-smoke.summary.json": {
+      "bytes": 756,
+      "sha256": "9e1535bb0314643d629c883043a09e4e60d2b907fa50d01c5ccae8a8d055217e"
+    },
+    "examples/model_a_smoke.py": {
+      "bytes": 3177,
+      "sha256": "d69cde5363922a5077cba64dd89658ab8897feecb77328bab1c5f157f85d8a32"
+    },
+    "examples/native_postrepair/README.md": {
+      "bytes": 3198,
+      "sha256": "5cab2bea395e34abada68ea8ae798b376ff58fcf9b806138655ce16f26c865e0"
+    },
+    "examples/native_postrepair/native-scores-with-coverage.json": {
+      "bytes": 63695,
+      "sha256": "5832f84e35fdb0513a514011ccb3b20f82a71d0231690e8fb458e8e0b6a0fc1a"
+    },
+    "examples/native_postrepair/native_postrepair_scores.py": {
+      "bytes": 6207,
+      "sha256": "29fc1d01b0b0942114773d3a3f734ef6a769bd312ccc0e99f7875bdeb6a3ed34"
+    },
+    "examples/native_postrepair/paired_scores.py": {
+      "bytes": 10954,
+      "sha256": "b8e780fa5e897abc5de329e51141a467682dc1e2de87c388ef1e098a219c0d2b"
+    },
+    "examples/native_postrepair/statistics.json": {
+      "bytes": 2505,
+      "sha256": "a4497bee277ccf80c254e3bf7e15151bea626b8bf7b706d0413f0c045298fce2"
+    },
+    "pyproject.toml": {
+      "bytes": 706,
+      "sha256": "cad9bee93444acace53d00a2ff48199751b3c6b5c458a364ab980f7f6752579d"
+    },
+    "requirements.txt": {
+      "bytes": 125,
+      "sha256": "d98fd12bcd83f72a2f2802fbdea62f017e8c28bb8fdaadc7e63cb8d6f104d957"
+    },
+    "src/magical_athlete/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/magical_athlete/benchmark_a.py": {
+      "bytes": 33866,
+      "sha256": "7b15862a8493f6c88e7c21b295ac2bf560926e17473d74cb6f089a078441ed8b"
+    },
+    "src/magical_athlete/campaign_a.py": {
+      "bytes": 32343,
+      "sha256": "52806114e38656b46ea6febf04c924dcaaf0680a874249e167b3fc01949295ec"
+    },
+    "src/magical_athlete/centaur_copy_baby_star_cycle.py": {
+      "bytes": 32821,
+      "sha256": "ed1f510e7e2a0d0b82fd592d9caf3e15bd110776c0a8d884caff53e37ef73d39"
+    },
+    "src/magical_athlete/copy_baby_duel_scoocher_cycle.py": {
+      "bytes": 26614,
+      "sha256": "402a0427ffef662d71c7cb80b4442abfb734af4109782bb5551d1d63d5ef6523"
+    },
+    "src/magical_athlete/copy_banana_cycle.py": {
+      "bytes": 10967,
+      "sha256": "8d5521fb6daa31c9c7cb20d1a5de599da442927b344c967c868cb22c2a1027f5"
+    },
+    "src/magical_athlete/copy_fish_baby_cycle.py": {
+      "bytes": 22658,
+      "sha256": "0fc014f68973f9a5c5fc2112ea1f0fc4d1e6849c885c9ed5236fdc6c375879e4"
+    },
+    "src/magical_athlete/decisions.py": {
+      "bytes": 5118,
+      "sha256": "f8c972df37d04bfa40a471e609d13bfb08c4785d04f0ade68d187ecfdd2305f1"
+    },
+    "src/magical_athlete/demo.py": {
+      "bytes": 7945,
+      "sha256": "b7eb5effaab7ac257ae6227ad5169bee0169f8f70a229d77923f7525e3e1b629"
+    },
+    "src/magical_athlete/duel_romantic_scoocher22_cycle.py": {
+      "bytes": 32474,
+      "sha256": "bc40b525bd55e7e60954681f369bd420f5792c2cfcf12ed2178240d5b9de0db5"
+    },
+    "src/magical_athlete/egg_copy_scoocher_cycle.py": {
+      "bytes": 28127,
+      "sha256": "60b440e14c8619d3ee56e271af765182d81c1206334889a6105375bda4f836e8"
+    },
+    "src/magical_athlete/engine.py": {
+      "bytes": 57031,
+      "sha256": "492dff2e22ef02562e9dbf294e831caf7780a29ddae83c57bfcd2ce8a88bb06a"
+    },
+    "src/magical_athlete/evaluation_a.py": {
+      "bytes": 44780,
+      "sha256": "0bbba631b139dda7feb2b5130d111306cd1d03917db94b8e04d13373a91a68d3"
+    },
+    "src/magical_athlete/events.py": {
+      "bytes": 802,
+      "sha256": "43cceca190623796ff13653ff8ce54dc03fe687800dffbda870520f64a06226c"
+    },
+    "src/magical_athlete/experiment_records.py": {
+      "bytes": 14711,
+      "sha256": "0399e501f615a08035e87d7d99e5c468b4c2bc8c09555500c86210c15acba706"
+    },
+    "src/magical_athlete/experiment_spec.py": {
+      "bytes": 21878,
+      "sha256": "a3587805b4b84732d96fc015749984086805b7e8aedcdc511d7827c118becbc3"
+    },
+    "src/magical_athlete/experiment_store.py": {
+      "bytes": 42824,
+      "sha256": "528de4f9f29e91c128a76a4a03f3d7b5518ef81ddbbdbf62cc7edea72483ac21"
+    },
+    "src/magical_athlete/experiments.py": {
+      "bytes": 11318,
+      "sha256": "98deb8763dc7e936cddf759beeeedba0e0c19e65b5fd93d98d124617a8041fa2"
+    },
+    "src/magical_athlete/first_legal_memory_v1.py": {
+      "bytes": 7507,
+      "sha256": "41b5274c514ceac1646e75d040e654a0fc691f76044e848a7e651de06399e938"
+    },
+    "src/magical_athlete/fish_baby_arrow11_cycle.py": {
+      "bytes": 23121,
+      "sha256": "33e73168197e6f3cc80adc651457c9b8b6907f90bba5f41c8d29b451f169be70"
+    },
+    "src/magical_athlete/fish_baby_arrow11_scoocher_cycle.py": {
+      "bytes": 43992,
+      "sha256": "72bba9e1ffa727c39c7133df44e853a849e3ac4383bf7ffd182b1d5b676eb7af"
+    },
+    "src/magical_athlete/fish_baby_baba4_cycle.py": {
+      "bytes": 15917,
+      "sha256": "994a30fb9dc1b0d83d09422ae95661e6595109db9b1ee360f7c2a2d5d20c5fe2"
+    },
+    "src/magical_athlete/fish_baby_cycle.py": {
+      "bytes": 35520,
+      "sha256": "63de1b482af6a1257242161b76417c55a89cb075e0fc5d3d3a4baf03f207ec49"
+    },
+    "src/magical_athlete/fish_baby_star_cycle.py": {
+      "bytes": 20439,
+      "sha256": "0ae8ac1b4ba83d9c9e49feeba004cbe0179bf438877a61a4f8938ecd806f85ca"
+    },
+    "src/magical_athlete/game.py": {
+      "bytes": 26852,
+      "sha256": "9906f9c202e568d12f0eb03277876ddd8567e9387d9c5ad589a834ec33f58098"
+    },
+    "src/magical_athlete/game_simulation.py": {
+      "bytes": 5118,
+      "sha256": "d7461ab55ae0db657153d836bdc546320de2d386520946f6b329a74448683dec"
+    },
+    "src/magical_athlete/model_a.py": {
+      "bytes": 33194,
+      "sha256": "e24ebc05690d61dd1f6569c60926f2e068b2d46ba4ec2838e8514764f644738f"
+    },
+    "src/magical_athlete/model_a_deployment.py": {
+      "bytes": 6543,
+      "sha256": "5c1111273dec76b9a1741a604f1432f84c6bea23642aeb5a879e1cf4ac0ee6eb"
+    },
+    "src/magical_athlete/model_a_features.py": {
+      "bytes": 21508,
+      "sha256": "a3cf00f966b1b7753a636c6a08f74ab8e90e391657dee8d0a5b12c0c24049e69"
+    },
+    "src/magical_athlete/model_a_repetition_guard_v1.py": {
+      "bytes": 2908,
+      "sha256": "811df3e1e55807456b88b4e676e95278d12849cf00b76487ee7381f0dfa31345"
+    },
+    "src/magical_athlete/model_a_repetition_guard_v2.py": {
+      "bytes": 8844,
+      "sha256": "a2afeb68bbbc17d0e46718252d5e6e5b68e99da190630d0ecdb22c4f1457b521"
+    },
+    "src/magical_athlete/model_a_repetition_guard_v3.py": {
+      "bytes": 9658,
+      "sha256": "397be741a370b246919461cb4ed42839b0d31750029d1433794020a8ded787a8"
+    },
+    "src/magical_athlete/model_a_repetition_guard_v4.py": {
+      "bytes": 6341,
+      "sha256": "548f19b411b29924e103344e05310327abd38cbd60d4c363d71c7eb385dbe644"
+    },
+    "src/magical_athlete/policy_runtime.py": {
+      "bytes": 9546,
+      "sha256": "085860d761833bad5716606dd8edf20e65b60ec688ebf105692f4ea70a03ea6e"
+    },
+    "src/magical_athlete/policy_runtime_router.py": {
+      "bytes": 17754,
+      "sha256": "e54ea772d0be858081ab01b6b1ff7cd36512d41406933a1f9d5ff72b4dfbe884"
+    },
+    "src/magical_athlete/preparing_copy_romantic_cycle.py": {
+      "bytes": 31103,
+      "sha256": "65dc6a746c62b9086e8b86851b10b9c161f1ad0dc67f743683d5432f9fd8c41c"
+    },
+    "src/magical_athlete/race_actions.py": {
+      "bytes": 134105,
+      "sha256": "08bc1d174e73884515b61192a12046a2a47b4b57ba6fc1e1aaeadef9feb095d2"
+    },
+    "src/magical_athlete/racer.py": {
+      "bytes": 3205,
+      "sha256": "44ad139315e5beb3fbf197e451ac292d6b84599165d17f770bf277bcad3e6c5d"
+    },
+    "src/magical_athlete/romantic_anchor_cycle.py": {
+      "bytes": 29883,
+      "sha256": "0bfde2079b8a17494eb2f7331f78aaaada2420fbdc818e0a7e9caa147c198071"
+    },
+    "src/magical_athlete/romantic_baby_arrow_cycle.py": {
+      "bytes": 19378,
+      "sha256": "c90de508752c2316243a72441ebfd1cb73c7f767f685ff9809871fd7225201c5"
+    },
+    "src/magical_athlete/romantic_baby_baba_cycle.py": {
+      "bytes": 23907,
+      "sha256": "c44577319b6dbf92070a323abe6b6c09be988ab74ef97577395d1ae29cdb3c72"
+    },
+    "src/magical_athlete/romantic_baby_shared12_cycle.py": {
+      "bytes": 23950,
+      "sha256": "8f64764e52ca4bec5bfafc8b6a6851af961f1a609ec538e838f42dfce274c72a"
+    },
+    "src/magical_athlete/romantic_baby_star_cycle.py": {
+      "bytes": 33584,
+      "sha256": "1715e8c294b5dc3e39cb1d4c0413c2b9c368a78c2d745d546d8d55d415136ab9"
+    },
+    "src/magical_athlete/romantic_duel_copy_cycle.py": {
+      "bytes": 21802,
+      "sha256": "a094f0c3d90ba9c3e9e94737c20263f253f768ccbad44798e50422da7c236984"
+    },
+    "src/magical_athlete/romantic_queue_cycle.py": {
+      "bytes": 14750,
+      "sha256": "b25c53a4398faf9594f303f10ff8e654f1a242e3f7581a11f92a086dbc79b208"
+    },
+    "src/magical_athlete/romantic_scoocher_anchor_cycle.py": {
+      "bytes": 17576,
+      "sha256": "d04fb98d5b9fda716196db27a20ea0ac63225c212375af5a18f8817b8749927a"
+    },
+    "src/magical_athlete/scoocher_baby_duel22_cycle.py": {
+      "bytes": 48503,
+      "sha256": "87d1af5283a64f1f43497bc9cd6f6f901734b65b86030dcf7083177dd84f3bec"
+    },
+    "src/magical_athlete/scoring.py": {
+      "bytes": 11482,
+      "sha256": "8acd4d404b8d8ec0caadcf4a9b8740d657f044ca4b3b539e025072cd542337b4"
+    },
+    "src/magical_athlete/simulation.py": {
+      "bytes": 4916,
+      "sha256": "76c70cfe5dda76389a4f20f6a37392aea4159727c8f9c9cb2b8daf672c2791bf"
+    },
+    "src/magical_athlete/source_compatibility.py": {
+      "bytes": 44399,
+      "sha256": "1c15f0f016a2dd03702f3b468f76378892c6a15fa53f99a02b8e125a3124e37f"
+    },
+    "src/magical_athlete/star_baby_cycle.py": {
+      "bytes": 37230,
+      "sha256": "007b896d8da685398c142e73d5229b7755d98b142236aaad8c99ba15e5246627"
+    },
+    "src/magical_athlete/state.py": {
+      "bytes": 132,
+      "sha256": "a1683256a38876cbb740f4d557e812eac9396b4e37987de8e4294aa863144886"
+    },
+    "src/magical_athlete/static_inheritance.py": {
+      "bytes": 14684,
+      "sha256": "8bbc38e06f10e2dd98ff1ab11f15208948561035deea3236f361bfabc4d73473"
+    },
+    "src/magical_athlete/track.py": {
+      "bytes": 4858,
+      "sha256": "c84498a0463276d36a63c0e66661affdc151b203018ea56c338b7ce35fae3b3f"
+    },
+    "src/magical_athlete/training_a.py": {
+      "bytes": 82843,
+      "sha256": "9ce165b4f390bb784c48038489b733987a92bb75e38cb02a3c28bb8f83d0cb30"
+    },
+    "tests/conftest.py": {
+      "bytes": 2936,
+      "sha256": "2d3c6288896107a2812e789e060195a50b6cab76d02bced89ae7113c1bd96f23"
+    },
+    "tests/test_arrival_batches.py": {
+      "bytes": 9397,
+      "sha256": "da2397fbec5ef11f5844f018295dbd70378b356f24a1d9284306a38dd98f6231"
+    },
+    "tests/test_copy_predictions.py": {
+      "bytes": 11387,
+      "sha256": "86cb05fba31c5766036d66cbe8f4673bb5f1ef849b555c0bb8ebed201d9131ca"
+    },
+    "tests/test_curated_h11.py": {
+      "bytes": 4284,
+      "sha256": "b52ab200898c7b2fdbea70b46966bc8b98fa772156879069af8840dceec2d194"
+    },
+    "tests/test_curated_optional_moves.py": {
+      "bytes": 7522,
+      "sha256": "5f7134168d67574a57abd5a0c95e5e845d38e6bc33109dbac47750e432ecac90"
+    },
+    "tests/test_curated_rerolls.py": {
+      "bytes": 10970,
+      "sha256": "40f3f1c2f8e89fb33d45c53dad32eaac6b8c44959ffc2763ad2dd2c9ec429450"
+    },
+    "tests/test_curated_scoocher.py": {
+      "bytes": 8023,
+      "sha256": "66df18d7eed3c9ec8f0c4bd04cac3604385a0c3e58a6a238a29003563c5c0dfe"
+    },
+    "tests/test_curated_stickler.py": {
+      "bytes": 6250,
+      "sha256": "141dea71990633690839a71401fd23a15ee6ca2c7283c2d3a8b8051b41ee9aa4"
+    },
+    "tests/test_decision_boundary.py": {
+      "bytes": 10266,
+      "sha256": "04a1012b636aa05d96036b478bc3ddda08f2e479c1eb2df931bb01fbf43a5b71"
+    },
+    "tests/test_demo.py": {
+      "bytes": 5618,
+      "sha256": "ede111d7bce61fa2eabe6532511c6fde0ca9745c24e5606213fa178230ba688a"
+    },
+    "tests/test_engine.py": {
+      "bytes": 706,
+      "sha256": "2c36b8e030158937bcde30354ee5c40f3397fea0ce814bd6910938e7e968259c"
+    },
+    "tests/test_game.py": {
+      "bytes": 27373,
+      "sha256": "74132f1f855bbc96f19d8b0a95351adbf7e6a9515cb68a7311cc1716d0d30809"
+    },
+    "tests/test_model_a.py": {
+      "bytes": 20744,
+      "sha256": "3b7a3e4cc161f8651b4d74fc9f22ed4b0b7c9d40292fb4cbd426235d1c4a316f"
+    },
+    "tests/test_model_a_features.py": {
+      "bytes": 18328,
+      "sha256": "60b431cae77042bd3dfad20d1f4e4e6ad98d04db8d17f860e92dcb6031993757"
+    },
+    "tests/test_official_game.py": {
+      "bytes": 6403,
+      "sha256": "4a4c17735902ca326138dcca8c3eb3c895059134244d1d511ce49c230e9d42e5"
+    },
+    "tests/test_official_track.py": {
+      "bytes": 5209,
+      "sha256": "0d4848dbade6ce350a9dd23722bf03fe288e7e72ea25a7dbb57d5153da6e7227"
+    },
+    "tests/test_romantic_alchemist_thirdwheel12.py": {
+      "bytes": 7492,
+      "sha256": "66727c24e7b91ef534b49139c19f2bebbcecff0ff005f4ce68a8e1a977630e2f"
+    },
+    "tests/test_romantic_anchor_cycle.py": {
+      "bytes": 32945,
+      "sha256": "0cfbc2baa502e697522229c033857113a85a6add48a85e6cfc5edca796b963fd"
+    },
+    "tests/test_scoring.py": {
+      "bytes": 8999,
+      "sha256": "b5979bb9dacc2c3a81bad030fc64c52e347b5f1b389445b9a54656b7294f5efe"
+    },
+    "tests/test_track_data.py": {
+      "bytes": 2281,
+      "sha256": "b62b6b7379ed893a7b1867401d2e610551c220e00cb575f30306eccd5b0e2550"
+    },
+    "tools/build_release.py": {
+      "bytes": 11573,
+      "sha256": "91fd650310bf4f85d33e7f91abce2344b15b386d0a04b36fd8b24e94edd901e2"
+    },
+    "tools/release_allowlist.json": {
+      "bytes": 2339,
+      "sha256": "339737797ca2bc133a1cea0de3685275778bd59d08ad7f88cd5d3a9b53a8f4a2"
+    }
+  },
+  "game_derived_names_and_rule_data_present": true,
+  "generated_minimal_metadata": [
+    "AGENTS.md",
+    "docs/rule_manifest.json",
+    "docs/test_vectors_curated.csv"
+  ],
+  "license_selected": false,
+  "models_training_databases_and_historical_replays_included": false,
+  "rule_version": "2026-10-29-rule-audit-reconciled-U01-H11-decided-H12-rolloff-reroll-H13-last-place-rolloff",
+  "runtime_dependencies": "Python standard library",
+  "schema": 1,
+  "scope": "local source handoff; no upload or public release performed",
+  "tests": [
+    "tests/conftest.py",
+    "tests/test_demo.py",
+    "tests/test_engine.py",
+    "tests/test_game.py",
+    "tests/test_official_game.py",
+    "tests/test_scoring.py",
+    "tests/test_track_data.py",
+    "tests/test_official_track.py",
+    "tests/test_decision_boundary.py",
+    "tests/test_model_a.py",
+    "tests/test_model_a_features.py",
+    "tests/test_arrival_batches.py",
+    "tests/test_copy_predictions.py",
+    "tests/test_curated_h11.py",
+    "tests/test_curated_optional_moves.py",
+    "tests/test_curated_rerolls.py",
+    "tests/test_curated_scoocher.py",
+    "tests/test_curated_stickler.py",
+    "tests/test_romantic_anchor_cycle.py",
+    "tests/test_romantic_alchemist_thirdwheel12.py"
+  ],
+  "third_party_PDFs_scans_or_artwork_included": false
+}

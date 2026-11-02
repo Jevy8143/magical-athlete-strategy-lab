@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "magical-athlete-simulator"
+version = "0.1.0"
+description = "Deterministic game simulation and auditable Monte Carlo experiments for Magical Athlete."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+magical-athlete-demo = "magical_athlete.demo:main"
+
+[project.optional-dependencies]
+test = ["pytest>=9,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+cache_dir = ".cache/pytest"
+markers = ["rule_vector(test_id): executes a curated CSV scenario against the real engine"]

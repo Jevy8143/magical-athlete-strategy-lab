@@ -1,0 +1,54 @@
+envs/
+__pycache__/
+.pytest_cache/
+.cache/
+artifacts/experiments/
+*.pyc
+*.egg-info/
+
+# Local environments, experiments, release outputs, and editor state.
+.venv/
+venv/
+artifacts/
+releases/
+dist/
+build/
+demo-output/
+smoke-output/
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+.tmp*/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Credentials and local configuration are never release inputs.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+
+# Third-party scans and private rule/audit prose remain local.
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+docs/*.md
+!docs/RELEASE_SCOPE.md
+!docs/VALIDATION.md
+docs/rule_manifest.json
+docs/ruling_registry.csv
+docs/test_vectors_curated.csv
+
+# Generated minimal release test metadata, not the private workspace originals.
+!docs/rule_manifest.json
+!docs/test_vectors_curated.csv

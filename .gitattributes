@@ -1,0 +1,4 @@
+# Guards, replay fingerprints, and the release manifest bind exact file bytes.
+# Preserve them even when a clone has core.autocrlf=true.
+* -text
+*.py -text
