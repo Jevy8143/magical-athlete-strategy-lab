@@ -1,0 +1,72 @@
+{
+  "Game_database_model_or_policy_calls": 0,
+  "all_predeclared_pairs_complete": true,
+  "authenticity_scope": "Arithmetic only; the private export separately authenticates actual seeds/policies and official signed ledgers.",
+  "complete_pairs": 128,
+  "inference_role": "primary_postrepair_native_incremental_learning",
+  "initial_failed_study_retained_separately": true,
+  "input_sha256": "5832f84e35fdb0513a514011ccb3b20f82a71d0231690e8fb458e8e0b6a0fc1a",
+  "interval_scope": "95%pointwise,2000seat-stratified paired bootstrap replicates; no multiplicity correction; no success-only CI",
+  "left_attempt_statuses": {
+    "completed": 128
+  },
+  "models": {
+    "left": {
+      "artifact_sha256": "1e256714cd662938a812467bfe7d157f7654d3b13b6ad2af1044012635e89243",
+      "training_games": 896
+    },
+    "right": {
+      "artifact_sha256": "42e77dbd462c896fb0d04c387bb72be9b2245fb418ffd47f240df3a8ae29ef12",
+      "training_games": 1024
+    }
+  },
+  "planned_arm_attempts": 256,
+  "planned_pairs": 128,
+  "policy_scope": "Both frozen mean V4 arms retain exploration_floor0.05 and public history/guard controls; three A0 V3 opponents; fixed nativeC98 lookup.",
+  "pooling_or_replacement": false,
+  "right_attempt_statuses": {
+    "completed": 128
+  },
+  "schema_version": 1,
+  "source_archive_sha256": "2ddf3ee89893cc9409f714325706d5de53e7c845d05aef4b74e8fcf813140e28",
+  "statistics": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 5929235755496567490,
+    "by_seat": {
+      "0": {
+        "left_mean": 10.40625,
+        "mean_difference": 0.21875,
+        "pairs": 32,
+        "right_mean": 10.625
+      },
+      "1": {
+        "left_mean": 9.78125,
+        "mean_difference": -0.4375,
+        "pairs": 32,
+        "right_mean": 9.34375
+      },
+      "2": {
+        "left_mean": 10.25,
+        "mean_difference": -0.375,
+        "pairs": 32,
+        "right_mean": 9.875
+      },
+      "3": {
+        "left_mean": 9.21875,
+        "mean_difference": 0.5625,
+        "pairs": 32,
+        "right_mean": 9.78125
+      }
+    },
+    "left_mean": 9.9140625,
+    "mean_difference_right_minus_left": -0.0078125,
+    "paired_games": 128,
+    "pointwise_bootstrap_95_percent_interval": [
+      -0.546875,
+      0.5
+    ],
+    "right_mean": 9.90625
+  },
+  "study_scope": "A new study declared after observing the initial failure, using disjoint new seeds. It does not complete or erase the initial primary study.",
+  "unit": "One paired Game seed/focal seat, not three independent opponent seats."
+}

@@ -1,0 +1,140 @@
+{
+  "Game_database_model_or_policy_calls": 0,
+  "all_three_panels_coverage_disclosed": true,
+  "independent_unit": "One paired Game seed and focal seat; the three opponents are not extra independent observations.",
+  "input_sha256": "d609931b608b5d9c75128d022687ace4710228f1af9b45a4204c06b75e277194",
+  "models": {
+    "left": {
+      "artifact_sha256": "1e256714cd662938a812467bfe7d157f7654d3b13b6ad2af1044012635e89243",
+      "training_games": 896
+    },
+    "right": {
+      "artifact_sha256": "42e77dbd462c896fb0d04c387bb72be9b2245fb418ffd47f240df3a8ae29ef12",
+      "training_games": 1024
+    }
+  },
+  "multiplicity": "95% pointwise intervals without multiplicity correction; random/public-memory exploratory.",
+  "panel_pooling": false,
+  "panels": {
+    "native": {
+      "all_predeclared_pairs_complete": false,
+      "complete_pairs": 0,
+      "inference_role": "primary_native_incremental_learning",
+      "left_attempt_statuses": {
+        "completed": 127,
+        "diagnostic": 1
+      },
+      "planned_pairs": 128,
+      "right_attempt_statuses": {
+        "unstarted": 128
+      },
+      "statistics": null
+    },
+    "public-memory": {
+      "all_predeclared_pairs_complete": true,
+      "complete_pairs": 128,
+      "inference_role": "exploratory_transfer",
+      "left_attempt_statuses": {
+        "completed": 128
+      },
+      "planned_pairs": 128,
+      "right_attempt_statuses": {
+        "completed": 128
+      },
+      "statistics": {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 5468882322733466882,
+        "by_seat": {
+          "0": {
+            "left_mean": 10.4375,
+            "mean_difference": -0.03125,
+            "pairs": 32,
+            "right_mean": 10.40625
+          },
+          "1": {
+            "left_mean": 11.0625,
+            "mean_difference": 0.28125,
+            "pairs": 32,
+            "right_mean": 11.34375
+          },
+          "2": {
+            "left_mean": 9.78125,
+            "mean_difference": 0.84375,
+            "pairs": 32,
+            "right_mean": 10.625
+          },
+          "3": {
+            "left_mean": 10.6875,
+            "mean_difference": -0.3125,
+            "pairs": 32,
+            "right_mean": 10.375
+          }
+        },
+        "left_mean": 10.4921875,
+        "mean_difference_right_minus_left": 0.1953125,
+        "paired_games": 128,
+        "pointwise_bootstrap_95_percent_interval": [
+          -0.2578125,
+          0.65625
+        ],
+        "right_mean": 10.6875
+      }
+    },
+    "random": {
+      "all_predeclared_pairs_complete": true,
+      "complete_pairs": 128,
+      "inference_role": "exploratory_transfer",
+      "left_attempt_statuses": {
+        "completed": 128
+      },
+      "planned_pairs": 128,
+      "right_attempt_statuses": {
+        "completed": 128
+      },
+      "statistics": {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 6383145991329724228,
+        "by_seat": {
+          "0": {
+            "left_mean": 10.125,
+            "mean_difference": -0.34375,
+            "pairs": 32,
+            "right_mean": 9.78125
+          },
+          "1": {
+            "left_mean": 9.21875,
+            "mean_difference": -0.40625,
+            "pairs": 32,
+            "right_mean": 8.8125
+          },
+          "2": {
+            "left_mean": 9.53125,
+            "mean_difference": -0.84375,
+            "pairs": 32,
+            "right_mean": 8.6875
+          },
+          "3": {
+            "left_mean": 8.71875,
+            "mean_difference": 0.59375,
+            "pairs": 32,
+            "right_mean": 9.3125
+          }
+        },
+        "left_mean": 9.3984375,
+        "mean_difference_right_minus_left": -0.25,
+        "paired_games": 128,
+        "pointwise_bootstrap_95_percent_interval": [
+          -0.875,
+          0.359375
+        ],
+        "right_mean": 9.1484375
+      }
+    }
+  },
+  "primary_native_incremental_learning_completed": false,
+  "sample_replacement_or_score_imputation": false,
+  "schema_version": 1,
+  "scope": "Score-table arithmetic only. The private exporter separately authenticates actual seeds, policies and official ledgers.",
+  "seed_scope": "Declared shared streams, independently checked against every recorded actual arm; an unstarted arm has no trajectory.",
+  "unconditional_CI_for_incomplete_panels": false
+}

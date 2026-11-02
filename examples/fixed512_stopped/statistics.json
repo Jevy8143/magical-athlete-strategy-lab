@@ -1,0 +1,49 @@
+{
+  "DEV_pairs_complete": false,
+  "Game_DB_model_or_policy_calls": 0,
+  "all768_attempt_statuses_retained": true,
+  "committed_prefix": {
+    "artifact_sha256": "42e77dbd462c896fb0d04c387bb72be9b2245fb418ffd47f240df3a8ae29ef12",
+    "new_updates": 0,
+    "training_games": 1024
+  },
+  "coverage_by_stage": {
+    "b0": {
+      "unstarted": 128
+    },
+    "b1": {
+      "unstarted": 128
+    },
+    "b2": {
+      "unstarted": 128
+    },
+    "b3": {
+      "unstarted": 128
+    },
+    "eval-final": {
+      "unstarted": 128
+    },
+    "eval-initial": {
+      "completed": 127,
+      "diagnostic": 1
+    }
+  },
+  "earlier_primary_studies_replaced_or_pooled": false,
+  "equal_seat_stratified_paired_statistics": null,
+  "independent_unit": "paired Game seed and focal seat, not the three opponents",
+  "inference_role": "development_learning_curve_exploratory",
+  "input_sha256": "4054f384e3e29080973f99107daa9f29b1eb68cbb0024812423b73ca83eaa45f",
+  "models": {
+    "left": {
+      "artifact_sha256": "42e77dbd462c896fb0d04c387bb72be9b2245fb418ffd47f240df3a8ae29ef12",
+      "training_games": 1024
+    },
+    "right": null
+  },
+  "planned_DEV_pairs": 128,
+  "production_sorted_pairing_key_pooled_statistics": null,
+  "retained_production_pooled_report_present": false,
+  "schema_version": 1,
+  "scope": "Predeclared fixed512 development learning curve, not a new confirmatory primary or a basis for adaptive extra training. Pointwise95% intervals, no multiplicity adjustment. Incomplete DEV receives no success-only CI.",
+  "two_finite_bootstrap_CIs_need_not_match": true
+}

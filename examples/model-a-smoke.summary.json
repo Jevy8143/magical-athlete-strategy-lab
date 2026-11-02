@@ -1,0 +1,17 @@
+{
+  "all_learning_health_verified": true,
+  "completed": true,
+  "evaluation_games": 8,
+  "evaluation_guard": "public-turn-local-duel-retry-fish-keep-v4",
+  "failed_or_evaluation_games_used_for_updates": 0,
+  "inherited_research_training_games": 0,
+  "interpretation": "Only demonstrates persistence, a real update, and frozen evaluation; too small for a performance claim.",
+  "kind": "model-a-twelve-game-pipeline-smoke-v1",
+  "master_seed": 20261102,
+  "model_updates": 1,
+  "pilot_id": "release-smoke-v1",
+  "report": "model-a-pilots/d81c4dfa98f5ac30d773459a74f840f577f27df15d99f254765fb9a2c6afb904/report.json",
+  "retained_games": 12,
+  "training_games": 4,
+  "training_guard": "public-turn-local-duel-fixed-keep-uniform-retry-v3"
+}

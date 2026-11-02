@@ -1,0 +1,447 @@
+{
+  "$comment": "Adapted only after actual native Game124 diagnostic. All384 planned coordinates and all arm statuses remain disclosed. Incomplete/unstarted arms have null final four-Race scores; no imputation or conditional-success CI. Only a fully completed128-pair panel gets the unchanged seat-stratified CI.",
+  "$id": "urn:magical-athlete:paired-score-export-with-full-coverage:v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "models": {
+      "additionalProperties": false,
+      "properties": {
+        "left": {
+          "additionalProperties": false,
+          "properties": {
+            "artifact_sha256": {
+              "const": "1e256714cd662938a812467bfe7d157f7654d3b13b6ad2af1044012635e89243"
+            },
+            "training_games": {
+              "const": 896
+            }
+          },
+          "required": [
+            "artifact_sha256",
+            "training_games"
+          ],
+          "type": "object"
+        },
+        "right": {
+          "additionalProperties": false,
+          "properties": {
+            "artifact_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "training_games": {
+              "const": 1024
+            }
+          },
+          "required": [
+            "artifact_sha256",
+            "training_games"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ],
+      "type": "object"
+    },
+    "pairs": {
+      "items": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "left_race_scores": {
+                  "type": "null"
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "left_status": {
+                  "const": "completed"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "left_race_scores": {
+                  "description": "Four Races; each has the four official signed seat subtotals, including chips, Stars and skills.",
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "maxItems": 4,
+                    "minItems": 4,
+                    "type": "array"
+                  },
+                  "maxItems": 4,
+                  "minItems": 4,
+                  "type": "array"
+                }
+              }
+            }
+          },
+          {
+            "else": {
+              "properties": {
+                "right_race_scores": {
+                  "type": "null"
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "right_status": {
+                  "const": "completed"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "right_race_scores": {
+                  "description": "Four Races; each has the four official signed seat subtotals, including chips, Stars and skills.",
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "maxItems": 4,
+                    "minItems": 4,
+                    "type": "array"
+                  },
+                  "maxItems": 4,
+                  "minItems": 4,
+                  "type": "array"
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "focal_seat": {
+            "maximum": 3,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "left_race_scores": {
+            "oneOf": [
+              {
+                "description": "Four Races; each has the four official signed seat subtotals, including chips, Stars and skills.",
+                "items": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "maxItems": 4,
+                  "minItems": 4,
+                  "type": "array"
+                },
+                "maxItems": 4,
+                "minItems": 4,
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "left_status": {
+            "enum": [
+              "completed",
+              "diagnostic",
+              "error",
+              "quarantined",
+              "unstarted",
+              "missing"
+            ]
+          },
+          "pair_index": {
+            "maximum": 127,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "panel": {
+            "enum": [
+              "native",
+              "random",
+              "public-memory"
+            ]
+          },
+          "right_race_scores": {
+            "oneOf": [
+              {
+                "description": "Four Races; each has the four official signed seat subtotals, including chips, Stars and skills.",
+                "items": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "maxItems": 4,
+                  "minItems": 4,
+                  "type": "array"
+                },
+                "maxItems": 4,
+                "minItems": 4,
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "right_status": {
+            "enum": [
+              "completed",
+              "diagnostic",
+              "error",
+              "quarantined",
+              "unstarted",
+              "missing"
+            ]
+          },
+          "seeds": {
+            "additionalProperties": false,
+            "properties": {
+              "dice_seed": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "game_policy_seeds": {
+                "items": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "maxItems": 4,
+                "minItems": 4,
+                "type": "array"
+              },
+              "game_seed": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "race_policy_seeds": {
+                "items": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "maxItems": 4,
+                "minItems": 4,
+                "type": "array"
+              }
+            },
+            "required": [
+              "game_seed",
+              "dice_seed",
+              "game_policy_seeds",
+              "race_policy_seeds"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "panel",
+          "focal_seat",
+          "pair_index",
+          "seeds",
+          "left_race_scores",
+          "right_race_scores",
+          "left_status",
+          "right_status"
+        ],
+        "type": "object"
+      },
+      "maxItems": 384,
+      "minItems": 384,
+      "type": "array"
+    },
+    "panels": {
+      "additionalProperties": false,
+      "properties": {
+        "native": {
+          "additionalProperties": false,
+          "properties": {
+            "actual_context_id": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "inference_role": {
+              "const": "primary_native_incremental_learning"
+            },
+            "lookup_context_id": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "master_seed": {
+              "maximum": 9223372036854775806,
+              "minimum": 0,
+              "type": "integer"
+            },
+            "mean_guard": {
+              "const": {
+                "implementation_sha256": "548f19b411b29924e103344e05310327abd38cbd60d4c363d71c7eb385dbe644",
+                "scheme": "public-turn-local-duel-retry-fish-keep-v4"
+              }
+            },
+            "opponent_snapshot_ids": {
+              "items": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            },
+            "pairs_per_seat": {
+              "const": 32
+            },
+            "study_id": {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "inference_role",
+            "pairs_per_seat",
+            "master_seed",
+            "study_id",
+            "opponent_snapshot_ids",
+            "actual_context_id",
+            "lookup_context_id",
+            "mean_guard"
+          ],
+          "type": "object"
+        },
+        "public-memory": {
+          "additionalProperties": false,
+          "properties": {
+            "actual_context_id": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "inference_role": {
+              "const": "exploratory_transfer"
+            },
+            "lookup_context_id": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "master_seed": {
+              "maximum": 9223372036854775806,
+              "minimum": 0,
+              "type": "integer"
+            },
+            "mean_guard": {
+              "const": {
+                "implementation_sha256": "548f19b411b29924e103344e05310327abd38cbd60d4c363d71c7eb385dbe644",
+                "scheme": "public-turn-local-duel-retry-fish-keep-v4"
+              }
+            },
+            "opponent_snapshot_ids": {
+              "items": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            },
+            "pairs_per_seat": {
+              "const": 32
+            },
+            "study_id": {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "inference_role",
+            "pairs_per_seat",
+            "master_seed",
+            "study_id",
+            "opponent_snapshot_ids",
+            "actual_context_id",
+            "lookup_context_id",
+            "mean_guard"
+          ],
+          "type": "object"
+        },
+        "random": {
+          "additionalProperties": false,
+          "properties": {
+            "actual_context_id": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "inference_role": {
+              "const": "exploratory_transfer"
+            },
+            "lookup_context_id": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "master_seed": {
+              "maximum": 9223372036854775806,
+              "minimum": 0,
+              "type": "integer"
+            },
+            "mean_guard": {
+              "const": {
+                "implementation_sha256": "548f19b411b29924e103344e05310327abd38cbd60d4c363d71c7eb385dbe644",
+                "scheme": "public-turn-local-duel-retry-fish-keep-v4"
+              }
+            },
+            "opponent_snapshot_ids": {
+              "items": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            },
+            "pairs_per_seat": {
+              "const": 32
+            },
+            "study_id": {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "inference_role",
+            "pairs_per_seat",
+            "master_seed",
+            "study_id",
+            "opponent_snapshot_ids",
+            "actual_context_id",
+            "lookup_context_id",
+            "mean_guard"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "native",
+        "random",
+        "public-memory"
+      ],
+      "type": "object"
+    },
+    "purpose": {
+      "const": "frozen_eval_score_export_with_full_coverage"
+    },
+    "schema_version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "purpose",
+    "models",
+    "panels",
+    "pairs"
+  ],
+  "title": "All predeclared paired scores and explicit incomplete attempt coverage",
+  "type": "object"
+}

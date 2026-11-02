@@ -1,0 +1,426 @@
+{
+  "completed": true,
+  "official_original_box": true,
+  "races": [
+    {
+      "entries": [
+        "Inchworm",
+        "Baba Yaga",
+        "Lackey",
+        "Flip Flop"
+      ],
+      "finish_order": [
+        1,
+        0
+      ],
+      "race_index": 1,
+      "score_breakdown": [
+        {
+          "placement": 1,
+          "player_id": 0,
+          "skills": 0,
+          "star": 0,
+          "total": 1
+        },
+        {
+          "placement": 3,
+          "player_id": 1,
+          "skills": 0,
+          "star": 0,
+          "total": 3
+        },
+        {
+          "placement": 0,
+          "player_id": 2,
+          "skills": 0,
+          "star": 0,
+          "total": 0
+        },
+        {
+          "placement": 0,
+          "player_id": 3,
+          "skills": 0,
+          "star": 0,
+          "total": 0
+        }
+      ],
+      "scores": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "scores_after": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "track": "Mild"
+    },
+    {
+      "entries": [
+        "Stickler",
+        "Rocket Scientist",
+        "Egg",
+        "Sisyphus"
+      ],
+      "finish_order": [
+        2,
+        0
+      ],
+      "race_index": 2,
+      "score_breakdown": [
+        {
+          "placement": 2,
+          "player_id": 0,
+          "skills": 0,
+          "star": 1,
+          "total": 3
+        },
+        {
+          "placement": 0,
+          "player_id": 1,
+          "skills": 0,
+          "star": 0,
+          "total": 0
+        },
+        {
+          "placement": 4,
+          "player_id": 2,
+          "skills": 0,
+          "star": 2,
+          "total": 6
+        },
+        {
+          "placement": 0,
+          "player_id": 3,
+          "skills": 2,
+          "star": 1,
+          "total": 3
+        }
+      ],
+      "scores": [
+        3,
+        0,
+        6,
+        3
+      ],
+      "scores_after": [
+        4,
+        3,
+        6,
+        3
+      ],
+      "track": "Wild"
+    },
+    {
+      "entries": [
+        "Magician",
+        "Third Wheel",
+        "Duelist",
+        "Suckerfish"
+      ],
+      "finish_order": [
+        2,
+        1
+      ],
+      "race_index": 3,
+      "score_breakdown": [
+        {
+          "placement": 0,
+          "player_id": 0,
+          "skills": 0,
+          "star": 0,
+          "total": 0
+        },
+        {
+          "placement": 2,
+          "player_id": 1,
+          "skills": 0,
+          "star": 0,
+          "total": 2
+        },
+        {
+          "placement": 4,
+          "player_id": 2,
+          "skills": 0,
+          "star": 0,
+          "total": 4
+        },
+        {
+          "placement": 0,
+          "player_id": 3,
+          "skills": 0,
+          "star": 0,
+          "total": 0
+        }
+      ],
+      "scores": [
+        0,
+        2,
+        4,
+        0
+      ],
+      "scores_after": [
+        4,
+        5,
+        10,
+        3
+      ],
+      "track": "Mild"
+    },
+    {
+      "entries": [
+        "Loveable Loser",
+        "Cheerleader",
+        "Banana",
+        "Hypnotist"
+      ],
+      "finish_order": [
+        0,
+        1
+      ],
+      "race_index": 4,
+      "score_breakdown": [
+        {
+          "placement": 5,
+          "player_id": 0,
+          "skills": 2,
+          "star": 1,
+          "total": 8
+        },
+        {
+          "placement": 3,
+          "player_id": 1,
+          "skills": 0,
+          "star": 2,
+          "total": 5
+        },
+        {
+          "placement": 0,
+          "player_id": 2,
+          "skills": 0,
+          "star": 0,
+          "total": 0
+        },
+        {
+          "placement": 0,
+          "player_id": 3,
+          "skills": 0,
+          "star": 0,
+          "total": 0
+        }
+      ],
+      "scores": [
+        8,
+        5,
+        0,
+        0
+      ],
+      "scores_after": [
+        12,
+        10,
+        10,
+        3
+      ],
+      "track": "Wild"
+    }
+  ],
+  "rule_version": "2026-10-29-rule-audit-reconciled-U01-H11-decided-H12-rolloff-reroll-H13-last-place-rolloff",
+  "schema_version": 1,
+  "score_entries": [
+    {
+      "delta": 3,
+      "phase": "after_race",
+      "player_id": 1,
+      "race_index": 1,
+      "reason": "placement_gold",
+      "sequence": 1
+    },
+    {
+      "delta": 1,
+      "phase": "after_race",
+      "player_id": 0,
+      "race_index": 1,
+      "reason": "placement_silver",
+      "sequence": 2
+    },
+    {
+      "delta": 4,
+      "phase": "before_race",
+      "player_id": 3,
+      "race_index": 2,
+      "reason": "before_race",
+      "sequence": 3
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 0,
+      "race_index": 2,
+      "reason": "star",
+      "sequence": 4
+    },
+    {
+      "delta": -1,
+      "phase": "during_race",
+      "player_id": 3,
+      "race_index": 2,
+      "reason": "rolled_six",
+      "sequence": 5
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 2,
+      "race_index": 2,
+      "reason": "star",
+      "sequence": 6
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 2,
+      "race_index": 2,
+      "reason": "star",
+      "sequence": 7
+    },
+    {
+      "delta": -1,
+      "phase": "during_race",
+      "player_id": 3,
+      "race_index": 2,
+      "reason": "rolled_six",
+      "sequence": 8
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 3,
+      "race_index": 2,
+      "reason": "star",
+      "sequence": 9
+    },
+    {
+      "delta": 4,
+      "phase": "after_race",
+      "player_id": 2,
+      "race_index": 2,
+      "reason": "placement_gold",
+      "sequence": 10
+    },
+    {
+      "delta": 2,
+      "phase": "after_race",
+      "player_id": 0,
+      "race_index": 2,
+      "reason": "placement_silver",
+      "sequence": 11
+    },
+    {
+      "delta": 4,
+      "phase": "after_race",
+      "player_id": 2,
+      "race_index": 3,
+      "reason": "placement_gold",
+      "sequence": 12
+    },
+    {
+      "delta": 2,
+      "phase": "after_race",
+      "player_id": 1,
+      "race_index": 3,
+      "reason": "placement_silver",
+      "sequence": 13
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 0,
+      "race_index": 4,
+      "reason": "alone_last_at_turn_start",
+      "sequence": 14
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 0,
+      "race_index": 4,
+      "reason": "star",
+      "sequence": 15
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 0,
+      "race_index": 4,
+      "reason": "alone_last_at_turn_start",
+      "sequence": 16
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 1,
+      "race_index": 4,
+      "reason": "star",
+      "sequence": 17
+    },
+    {
+      "delta": 1,
+      "phase": "during_race",
+      "player_id": 1,
+      "race_index": 4,
+      "reason": "star",
+      "sequence": 18
+    },
+    {
+      "delta": 5,
+      "phase": "after_race",
+      "player_id": 0,
+      "race_index": 4,
+      "reason": "placement_gold",
+      "sequence": 19
+    },
+    {
+      "delta": 3,
+      "phase": "after_race",
+      "player_id": 1,
+      "race_index": 4,
+      "reason": "placement_silver",
+      "sequence": 20
+    }
+  ],
+  "seed": 1,
+  "seed_streams": {
+    "dice_seed": 2,
+    "game_policy_seeds": [
+      100,
+      101,
+      102,
+      103
+    ],
+    "game_seed": 1,
+    "race_policy_seeds": [
+      200,
+      201,
+      202,
+      203
+    ],
+    "scheme": "demo-offset-seeds-v1"
+  },
+  "total_scores": [
+    12,
+    10,
+    10,
+    3
+  ],
+  "verification": {
+    "individual_races_verified": 4,
+    "score_ledger_verified": true,
+    "whole_game_verified": true
+  },
+  "winners": [
+    0
+  ]
+}

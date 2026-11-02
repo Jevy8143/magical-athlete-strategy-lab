@@ -1,0 +1,5 @@
+{
+  "canonical_version": "2026-10-29-rule-audit-reconciled-U01-H11-decided-H12-rolloff-reroll-H13-last-place-rolloff",
+  "historical_audit_documents_included": false,
+  "scope": "runtime and selected release tests only"
+}
